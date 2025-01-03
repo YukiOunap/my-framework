@@ -1,6 +1,8 @@
 # mini-framework
 
 - [mini-framework](#mini-framework)
+  - [Audit](#audit)
+  - [Author](#author)
   - [Features](#features)
   - [Code Examples and Explanations](#code-examples-and-explanations)
     - [1. Creating Elements with Attribute and Nested Children](#1-creating-elements-with-attribute-and-nested-children)
@@ -21,12 +23,18 @@
     - [Reactivity and State Management](#reactivity-and-state-management)
 - [Sample App: todoMVC](#sample-app-todomvc)
   - [How to start](#how-to-start)
-  - [Audit](#audit)
-  - [Author](#author)
 
 This framework provides a simple and lightweight approach to building web applications with custom routing, event handling, state management, and dynamic element creation. It contains four core components: `addEvent.js`, `createElement.js`, `router.js`, and `state.js` in `src` directory.
 
 The `app` directory contains a sample todoMVC project implemented by this framework.
+
+## Audit
+
+Follow the instructions in the audit page: https://github.com/01-edu/public/tree/master/subjects/mini-framework/audit
+
+## Author
+
+- Yuki Kaneko
 
 ## Features
 
@@ -159,11 +167,3 @@ A simple project implemented by this framework.
 2. Open `app/index.html` on VSCode, right-click anywhere in the file and select "Open with Live Server".
 
 **NB!** Refreshing the page may display "listing directory", not the app page. This is caused by Live Server, so you may open the server from `index.html` file again or manually go to `index.html` in the directory.
-
-## Audit
-
-Follow the instructions in the audit page: https://github.com/01-edu/public/tree/master/subjects/mini-framework/audit
-
-## Author
-
-- Yuki Kaneko
