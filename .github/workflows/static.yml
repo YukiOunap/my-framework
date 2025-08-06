@@ -20,10 +20,10 @@ jobs:
 
       - name: Commit and push changes
         env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "YukiOunap"
+          git config user.email "illuminate.kmkz@outlook.com"
 
           git add docs/src
           git commit -m "Copy src to docs/src via GitHub Actions" || echo "No changes to commit"
