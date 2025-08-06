@@ -1,6 +1,6 @@
 # My-Framework
 
-This framework provides a simple and lightweight approach to building web applications with custom routing, event handling, state management, and dynamic element creation. It contains four core components: `addEvent.js`, `createElement.js`, `router.js`, and `state.js` in `src` directory.
+This framework provides a simple and lightweight approach to building web applications with custom routing, event handling, state management, and dynamic element creation. It contains four core components: `addEvent.js`, `createElement.js`, `router.js`, and `state.js` in `docs/src` directory.
 
 The `docs` directory contains a sample todoMVC project implemented by this framework.
 
