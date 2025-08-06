@@ -1,0 +1,32 @@
+name: Copy src to docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Copy src to docs/src
+        run: |
+          mkdir -p docs/src
+          cp -r src/* docs/src/
+
+      - name: Commit and push changes
+        env:
+          TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          git config user.name "YukiOunap"
+          git config user.email "illuminate.kmkz@outlook.com"
+
+          git add docs/src
+          git commit -m "Copy src to docs/src via GitHub Actions" || echo "No changes to commit"
+
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git
+          git push origin HEAD:master
