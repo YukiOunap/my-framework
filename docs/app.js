@@ -1,7 +1,7 @@
 import { createElement } from "./src/createElement.js";
 import { addEvent } from "./src/addEvent.js";
-import { State } from "./src/State.js";
-import { Router } from "./src/Router.js";
+import { State } from "./src/state.js";
+import { Router } from "./src/router.js";
 
 // initialize app state
 State.setState({
