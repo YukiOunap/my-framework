@@ -1,42 +1,16 @@
-# mini-framework
-
-- [mini-framework](#mini-framework)
-  - [Audit](#audit)
-  - [Author](#author)
-  - [Features](#features)
-  - [Code Examples and Explanations](#code-examples-and-explanations)
-    - [1. Creating Elements with Attribute and Nested Children](#1-creating-elements-with-attribute-and-nested-children)
-      - [Example](#example)
-      - [Explanation:](#explanation)
-    - [2. Creating an Event](#2-creating-an-event)
-      - [Example](#example-1)
-      - [Explanation:](#explanation-1)
-  - [How the Framework Works](#how-the-framework-works)
-    - [Element Creation (`createElement.js`)](#element-creation-createelementjs)
-    - [Event Handling (`addEvent.js`)](#event-handling-addeventjs)
-    - [Routing (`router.js`)](#routing-routerjs)
-    - [State Management (`state.js`)](#state-management-statejs)
-  - [Why Things Work the Way They Work](#why-things-work-the-way-they-work)
-    - [Centralized Event Handling](#centralized-event-handling)
-    - [Dynamic Element Creation](#dynamic-element-creation)
-    - [Client-Side Routing](#client-side-routing)
-    - [Reactivity and State Management](#reactivity-and-state-management)
-- [Sample App: todoMVC](#sample-app-todomvc)
-  - [How to start](#how-to-start)
+# My-Framework
 
 This framework provides a simple and lightweight approach to building web applications with custom routing, event handling, state management, and dynamic element creation. It contains four core components: `addEvent.js`, `createElement.js`, `router.js`, and `state.js` in `src` directory.
 
-The `app` directory contains a sample todoMVC project implemented by this framework.
+The `docs` directory contains a sample todoMVC project implemented by this framework.
 
-## Audit
+# Sample App: todoMVC
 
-Follow the instructions in the audit page: https://github.com/01-edu/public/tree/master/subjects/mini-framework/audit
+A simple project implemented by this framework.
 
-## Author
+You can try the app here: https://yukiounap.github.io/my-framework/
 
-- Yuki Kaneko
-
-## Features
+# Framework Details
 
 - **Dynamic Element Creation**: Easily create HTML elements with attributes and children.
 - **Custom Event Handling**: Attach multiple event listeners to elements and manage them efficiently.
@@ -156,14 +130,3 @@ The routing mechanism uses hash-based navigation (#) to manage state transitions
 ### Reactivity and State Management
 
 The state management system enables a reactive UI by ensuring that all components that are subscribed to the state are automatically updated whenever the state changes. This is a fundamental concept in modern frontend frameworks.
-
-# Sample App: todoMVC
-
-A simple project implemented by this framework.
-
-## How to start
-
-1. Get VSCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer):
-2. Open `app/index.html` on VSCode, right-click anywhere in the file and select "Open with Live Server".
-
-**NB!** Refreshing the page may display "listing directory", not the app page. This is caused by Live Server, so you may open the server from `index.html` file again or manually go to `index.html` in the directory.
